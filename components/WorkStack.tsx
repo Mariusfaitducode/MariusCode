@@ -100,6 +100,7 @@ const Card: React.FC<CardProps> = ({
                src={project.image} 
                alt={project.title} 
                className="w-full h-full object-cover"
+               style={{ objectPosition: project.imagePosition }}
              />
              <div className="absolute inset-0 bg-gradient-to-l from-black/10 to-transparent mix-blend-multiply" />
            </motion.div>
@@ -132,14 +133,14 @@ export const WorkStack: React.FC = () => {
       </div>
       
       {PROJECTS.map((project, i) => {
-        const targetScale = 1 - ( (PROJECTS.length - i) * 0.05);
+        const targetScale = 1 - ( (PROJECTS.length - i) * 0.03);
         return (
           <Card 
             key={project.id} 
             index={i} 
             project={project} 
             progress={scrollYProgress}
-            range={[i * 0.25, 1]}
+            range={[i / PROJECTS.length, 1]}
             targetScale={targetScale} 
           />
         )

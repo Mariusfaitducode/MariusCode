@@ -3,6 +3,47 @@ import { Layers, Palette, Compass, Code, Smartphone, Database, Box } from 'lucid
 export const PROJECTS = [
   {
     id: 1,
+    title: "Waysake",
+    year: "2026",
+    category: "Open Source",
+    description:
+      "A self-hosted travel drive for couples and families. Drop in your photos and Waysake sorts them into trips and stops on a globe, with routes, offline geocoding and a \"Where was it?\" game. One Docker container, no cloud, no account. Free and open source under AGPL-3.0.",
+    tech: ["TypeScript", "MapLibre", "Docker", "Immich", "Self-hosted", "Offline Geocoding", "Open Source"],
+    image: "/images/projects/Waysake.png",
+    url: "https://waysake.com",
+    github: "https://github.com/Mariusfaitducode/waysake",
+    color: "#E4573D"
+  },
+  {
+    id: 2,
+    title: "Loufti",
+    year: "2026",
+    category: "SaaS",
+    description:
+      "A management SaaS for French leisure centers and after-school programs. Enrolment requests, family records, income-based pricing and daily attendance sheets live in one tool, from the pricing engine to the family portal.",
+    tech: ["React", "TanStack", "Tailwind CSS", "Python", "FastAPI", "PostgreSQL", "SaaS"],
+    image: "/images/projects/Loufti.png",
+    imagePosition: "left top",
+    url: "https://loufti.fr",
+    github: null,
+    color: "#2F4A2B"
+  },
+  {
+    id: 3,
+    title: "Dossier Vivant",
+    year: "2026",
+    category: "AI Compliance",
+    description:
+      "AI-assisted regulatory compliance for cosmetic brands. It reads product files and supplier IFRA sheets, computes the 81 allergens of EU regulation 2023/1545, checks 1,762 banned substances and delivers a report ready for the toxicologist, always reviewed by a human.",
+    tech: ["Next.js", "Python", "FastAPI", "Claude API", "PDF Parsing", "Regulatory AI"],
+    image: "/images/projects/DossierVivant.png",
+    imagePosition: "left top",
+    url: "https://dossiervivant.fr",
+    github: null,
+    color: "#B5583B"
+  },
+  {
+    id: 4,
     title: "Sur Le Radar",
     year: "2026",
     category: "Webmarketing",
@@ -24,7 +65,7 @@ export const PROJECTS = [
     color: "#06D6A0"
   },
   {
-    id: 2,
+    id: 5,
     title: "TidyMailbox",
     year: "2025",
     category: "Mailbox Management",
@@ -36,7 +77,7 @@ export const PROJECTS = [
     color: "#2A9D8F"
   },
   {
-    id: 3,
+    id: 6,
     title: "Best Matcha Ever",
     year: "2025",
     category: "Matcha Shop",
@@ -48,7 +89,7 @@ export const PROJECTS = [
     color: "#E76F51"
   },
   {
-    id: 4,
+    id: 7,
     title: "OptiApp",
     year: "2025",
     category: "Recording App",
@@ -60,7 +101,7 @@ export const PROJECTS = [
     color: "#F4A261"
   },
   {
-    id: 5,
+    id: 8,
     title: "ConcepTask",
     year: "2024",
     category: "Productivity",
